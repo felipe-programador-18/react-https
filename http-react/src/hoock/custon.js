@@ -10,7 +10,7 @@ export const ManageFecthing = (url) => {
   const [callfe , setCallset] = useState(false)
   const [loading, setLoading] = useState(false) 
 
-    
+    //create function to adding method headers and another things
     const HttpConfig = (data, method) =>{
      if(method ==='POST'){
         setSetting({
