@@ -1,0 +1,79 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "nike",
+      "price": 59.3
+    },
+    {
+      "id": 2,
+      "name": "nike-adidas",
+      "price": 521.3
+    },
+    {
+      "id": 3,
+      "name": "nike-puma",
+      "price": 595.3
+    },
+    {
+      "name": "FELIPE MARTINS MACHADO",
+      "price": "323",
+      "id": 4
+    },
+    {
+      "name": "",
+      "price": "",
+      "id": 5
+    },
+    {
+      "name": "supermaket",
+      "price": "2555",
+      "id": 6
+    },
+    {
+      "name": "television",
+      "price": "43423",
+      "id": 7
+    },
+    {
+      "name": "FELIPE MARTINS MACHADO",
+      "price": "323",
+      "id": 8
+    },
+    {
+      "name": "FELIPE MARTINS MACHADO",
+      "price": "323",
+      "id": 9
+    },
+    {
+      "name": "",
+      "price": "",
+      "id": 10
+    },
+    {
+      "name": "martins programmaer",
+      "price": "4234234",
+      "id": 11
+    },
+    {
+      "name": "martins programmaer",
+      "price": "323",
+      "id": 12
+    },
+    {
+      "name": "FELIPE MARTINS MACHADO",
+      "price": "32323",
+      "id": 13
+    },
+    {
+      "name": "FELIPE MARTINS MACHADO",
+      "price": "2555",
+      "id": 14
+    },
+    {
+      "name": "television",
+      "price": "34342",
+      "id": 15
+    }
+  ]
+}
