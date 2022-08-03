@@ -1,19 +1,20 @@
 
 import './App.css';
-import { useState} from "react";
+import { useEffect, useState} from "react";
 
 // 4 - custom hook
 import { useFetch } from "./hoock/useFetch";
 
 // 8 - errar url para mostrar erro
 // "http://localhost:3001/products"
-const url = "http://localhost:3000/products";
+const url = "http://localhost:3000/message";
 
 function App() {
-  const [products, setProducts] = useState([]);
-
+  const [test, setTest] = useState([]);
+   
   // 4 - custom hook e 5 - refactor post
   const { data: items, httpConfig, loading, error } = useFetch(url);
+   console.log('test data', items)
 
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
@@ -61,17 +62,71 @@ function App() {
     httpConfig(id, "DELETE");
   };
 
+  const [dog, setDog] = useState([]) 
+  
+
+  const AnotherTest =async (test) => {
+    try {
+      const anotherurl = `https://dog.ceo/api/breeds/list/all`
+      const res = await fetch(anotherurl)
+      console.log('test all brand here', res)
+      return res.json()
+      
+    } catch (error) {
+      console.log("have error here", error)
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+  const TestFechting = async (breed)=> {
+    try {
+      //`https://randomuser.me/api/?results=${results}`
+      const newurlw = `https://dog.ceo/api/?breed=${breed}/images`
+      const res = await fetch(newurlw)
+      setDog(res.message)
+      console.log("have something here ?", res)
+      return await res.json()
+    } catch (error) {
+      console.log('error in api',error.message)
+    }
+  }
+
+
+
+
+  useEffect(() => {
+    TestFechting() 
+  },[]) 
+  useEffect(() => {
+    
+    AnotherTest()   
+  },[])
+
   return (
     <div className="App">
       <h1>Lista de produtos</h1>
+   
       {/* 6 - state de loading */}
       {loading && <p>Carregando dados...</p>}
       {error && <p>{error}</p>}
       <ul>
         {items &&
           items.map((product) => (
-            <li key={product.id}>
-              {product.name} - R$: {product.price}
+            <li key={product.message}>
+              {product.poodle} <br/>
+              {product.poodle}
+              {product.poodle}
+              {product.poodle}
+              {product.affenpinscher }
               {/* 9 - desafio */}
               <button onClick={() => handleRemove(product.id)}>Excluir</button>
             </li>
