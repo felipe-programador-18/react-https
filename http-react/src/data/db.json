@@ -1,7 +1,9 @@
 {
   "message": [
     {
-      "affenpinscher": [ "https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"],
+      "affenpinscher": [
+        "https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"
+      ],
       "african": [],
       "airedale": [],
       "akita": [],
